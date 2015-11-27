@@ -22,10 +22,10 @@ gulp.task('css', function() {
       autoprefixer(),
       cssnano()
     ]))
+  .on('error', gutil.log)
   .pipe(
       gulp.dest(dest + 'css')
-  )
-  .on('error', gutil.log);
+  );
 });
 
 gulp.task('watch', function() {
