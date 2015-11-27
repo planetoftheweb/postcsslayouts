@@ -1,0 +1,31 @@
+{
+  "name": "postcss",
+  "version": "1.0.0",
+  "description": "A repository for an upcoming PostCSS course on Lynda.com",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.1.0",
+    "cssnano": "^3.3.2",
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-webserver": "^0.9.1",
+    "postcss-scss": "^0.1.3",
+    "precss": "^1.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planetoftheweb/postcss.git"
+  },
+  "author": "Ray Villalobos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/planetoftheweb/postcss/issues"
+  },
+  "homepage": "https://github.com/planetoftheweb/postcss#readme"
+}

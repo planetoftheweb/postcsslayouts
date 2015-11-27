@@ -1,0 +1,36 @@
+#products {
+
+  .product-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+
+    .product-item {
+      width: 50%;
+
+      @media $small {
+        width: 33.3333333334%;
+      }
+
+      @media $medium {
+        width: 25%;
+      }
+
+      @media $large {
+        width: 16.666667%;
+      }
+
+
+      height: 100%;
+
+      line-height: 150px;
+      color: white;
+      font-weight: bold;
+      font-size: 1em;
+      text-align: center;
+    }
+
+  }
+}

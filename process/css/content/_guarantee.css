@@ -1,0 +1,14 @@
+#guarantee {
+  color: white;
+  font-size: 2rem;
+  background: color($green shade(10%));
+
+  .headline {
+    color: color($yellow tint(15%));
+    color: $white;
+  }
+
+  a {
+    color: color($green tint(30%));
+  }
+}

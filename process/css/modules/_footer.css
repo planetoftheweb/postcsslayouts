@@ -1,0 +1,19 @@
+.footer {
+  background: color($yellow shade(80%));
+  color: $color-background;
+  padding: 1rem 0 5rem 0;
+  line-height: 100%;
+  text-align: center;
+
+  .nav {
+    margin-top: 0;
+  }
+
+  .legal {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 110%;
+    margin-top: 3rem;
+  }
+}

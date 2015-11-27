@@ -1,0 +1,12 @@
+#history {
+  background: $yellow;
+
+  .headline {
+    color: $red;
+  }
+
+  em {
+    color: color($orange shade(10%));
+  }
+
+}
