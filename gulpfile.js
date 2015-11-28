@@ -2,10 +2,8 @@ var gulp = require('gulp'),
   gutil = require('gulp-util'),
   webserver = require('gulp-webserver'),
   postcss = require('gulp-postcss'),
-  precss = require('precss'),
   autoprefixer = require('autoprefixer'),
-  cssnext = require('cssnext'),
-  cssnano = require('cssnano'),
+  colorfunctions = require('postcss-color-function'),
 
   source = 'process/css/',
   dest = 'builds/postcss/';
@@ -17,15 +15,11 @@ gulp.task('html', function() {
 gulp.task('css', function() {
   gulp.src(source + 'style.css')
   .pipe(postcss([
-      precss(),
-      cssnext(),
-      autoprefixer(),
-      cssnano()
-    ]))
+    autoprefixer(),
+    colorfunctions()
+  ]))
   .on('error', gutil.log)
-  .pipe(
-      gulp.dest(dest + 'css')
-  );
+  .pipe(gulp.dest(dest + 'css'));
 });
 
 gulp.task('watch', function() {
