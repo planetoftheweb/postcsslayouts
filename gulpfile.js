@@ -7,8 +7,8 @@ var gulp = require('gulp'),
   cssnext = require('cssnext'),
   cssnano = require('cssnano'),
 
-  dest = 'builds/postcss/',
-  source = 'process/css/';
+  source = 'process/css/',
+  dest = 'builds/postcss/';
 
 gulp.task('html', function() {
   gulp.src(dest + '*.html');
