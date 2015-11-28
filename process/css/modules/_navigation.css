@@ -23,6 +23,7 @@
     .navbar {
       margin: 0;
       padding: 0;
+      line-height: 100%;
       list-style-type: none;
       @media $small {
         width: 70%;
@@ -36,14 +37,30 @@
         color: $color-background;
         text-decoration: none;
         display: block;
-      	padding: .3em 15px;
-        border-bottom: 5px solid transparent;
+        padding: .3em 15px;
+        transition: 1s ease-out;
+      }
+
+      a:after {
+      content: '';
+      display: block;
+      height: 5px;
+      margin-top: 2px;
+      width: 0;
+      transition: width .3s ease-out, background-color .3s ease-out;
       }
 
       a:hover {
         color: $yellow;
-        border-bottom: 5px solid $yellow;
+        border-bottom: none;
       }
+
+      a:hover:after {
+      width: 100%;
+      background: $yellow;
+      }
+
+
     } /* navbar */
   } /* nav-content */
 }

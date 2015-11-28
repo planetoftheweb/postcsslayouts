@@ -19,6 +19,13 @@
     }
 
     .person-card {
+      transition: all .2s ease-in;
+      transform: scale(.9);
+      opacity: .8;
+      &:hover {
+        transform: scale(1.05);
+        opacity: 1;
+      }
       margin-bottom: 5%;
       max-width: 400px;
 
