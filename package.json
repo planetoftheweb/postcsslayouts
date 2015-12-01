@@ -1,7 +1,7 @@
 {
   "name": "postcss",
   "version": "1.0.0",
-  "description": "A repository for an upcoming PostCSS course on Lynda.com",
+  "description": "A repository for an upcoming Responsive Single Page Layouts course on Lynda.com",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -11,6 +11,9 @@
     "gulp-postcss": "^6.0.1",
     "gulp-util": "^3.0.7",
     "gulp-webserver": "^0.9.1",
+    "install": "^0.4.0",
+    "mq4-hover-shim": "^0.3.0",
+    "npm": "^3.5.0",
     "postcss-color-function": "^2.0.0",
     "precss": "^1.3.0"
   },
@@ -19,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/planetoftheweb/postcss.git"
+    "url": "git+https://github.com/planetoftheweb/postcsslayouts.git"
   },
   "author": "Ray Villalobos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/planetoftheweb/postcss/issues"
+    "url": "https://github.com/planetoftheweb/postcsslayouts/issues"
   },
-  "homepage": "https://github.com/planetoftheweb/postcss#readme"
+  "homepage": "https://github.com/planetoftheweb/postcsslayouts#readme"
 }
