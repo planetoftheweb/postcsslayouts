@@ -13,9 +13,14 @@ body {
   font-size: 1.8rem;
   font-family: $font-main;
   line-height: 160%;
-  font-weight: 200;
+  font-weight: $font-weight-normal;
   color: $color-main;
   background-color: $color-backgrounds;
+}
+
+img {
+	display: block;
+	max-width: 100%;
 }
 
 .container {
@@ -37,7 +42,7 @@ img {
 
 a {
   text-decoration: none;
-  font-weight: 700;
+  font-weight: $font-weight-heavy;
   color: $red;
 }
 
@@ -46,7 +51,7 @@ a:hover {
 }
 
 em {
-  font-weight: 700;
+  font-weight: $font-weight-heavy;
   font-size: 140%;
   color: $yellow;
   font-style: normal;

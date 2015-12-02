@@ -61,7 +61,7 @@
 
       .card-text {
         font-size: 1.6rem;
-        font-weight: 400;
+        font-weight: $font-weight-normal;
         line-height: 130%;
         margin: 0;
         padding: 7%;

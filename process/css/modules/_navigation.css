@@ -33,7 +33,7 @@
       }
 
       a {
-        font-weight: 600;
+        font-weight: $font-weight-bold;
         color: $color-background;
         text-decoration: none;
         display: block;

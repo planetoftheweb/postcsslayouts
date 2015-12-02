@@ -14,7 +14,7 @@
 
   .headline {
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: $font-weight-normal;
     font-size: 4rem;
     margin-top: 3rem;
     line-height: 110%;

@@ -1,4 +1,5 @@
 #products {
+  padding-bottom: 0;
 
   .product-list {
     padding: 0;
@@ -8,6 +9,13 @@
     flex-flow: row wrap;
 
     .product-item {
+      height: 100%;
+      line-height: 150px;
+      color: white;
+      font-weight: $font-weight-heavy;
+      font-size: 1em;
+      text-align: center;
+
       width: 50%;
       transition: all .2s ease-out;
       transform: scale(1);
@@ -35,15 +43,6 @@
       @media $large {
         width: 16.666667%;
       }
-
-
-      height: 100%;
-
-      line-height: 150px;
-      color: white;
-      font-weight: bold;
-      font-size: 1em;
-      text-align: center;
     }
 
   }

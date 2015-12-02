@@ -1,5 +1,0 @@
-img {
-	display: block;
-	border-radius: nth($roundness, 1);
-	max-width: 100%;
-}
