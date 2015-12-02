@@ -22,12 +22,16 @@
       transition: all .2s ease-in;
       transform: scale(.9);
       opacity: .8;
+      background: color(white alpha(20%));
+      box-shadow: 5px 5px 3px color($yellow alpha(50%));
+      border-radius: 20px;
+      margin-bottom: 5%;
+      max-width: 400px;
+
       &:hover {
         transform: scale(1.05);
         opacity: 1;
       }
-      margin-bottom: 5%;
-      max-width: 400px;
 
       @media $small {
         width: 45%;
@@ -36,11 +40,6 @@
       @media $large {
         width: 30%;
       }
-
-
-      background: color(white alpha(20%));
-      box-shadow: 5px 5px 3px color($yellow alpha(50%));
-      border-radius: 20px;
 
       .card-info {
         background: color($orange alpha(90%));
