@@ -355,12 +355,24 @@ em {
 }
 #products .product-list .product-item {
     width: 50%;
+    transition: all .2s ease-out;
+    transform: scale(1);
     height: 100%;
     line-height: 150px;
     color: white;
     font-weight: bold;
     font-size: 1em;
     text-align: center;
+}
+#products .product-list .product-item .product-name {
+    display: none;
+}
+#products .product-list .product-item .product-name:hover {
+    display: block;
+}
+#products .product-list .product-item:hover {
+    z-index: 1;
+    transform: scale(1.5);
 }
 @media screen and (min-width: 600px) {
     #products .product-list .product-item {
@@ -409,14 +421,14 @@ em {
     color: rgb(172, 176, 5);
 }
 #people .people-cards .person-card {
-    transition: all .2s ease-in;
-    transform: scale(.9);
-    opacity: .8;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 5px 5px 3px rgba(243, 211, 80, 0.5);
     border-radius: 20px;
     margin-bottom: 5%;
     max-width: 400px;
+    transition: all .2s ease-in;
+    transform: scale(.9);
+    opacity: .8;
 }
 #people .people-cards .person-card:hover {
     transform: scale(1.05);

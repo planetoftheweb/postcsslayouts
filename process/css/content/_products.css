@@ -9,6 +9,20 @@
 
     .product-item {
       width: 50%;
+      transition: all .2s ease-out;
+      transform: scale(1);
+
+      .product-name {
+        display: none;
+        &:hover {
+          display:block;
+        }
+      }
+
+      &:hover {
+        z-index: 1;
+        transform: scale(1.5);
+      }
 
       @media $small {
         width: 33.3333333334%;
