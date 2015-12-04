@@ -1,4 +1,10 @@
 #guarantee {
+  padding-top: 0;
+
+  .imageheader {
+    @mixin backImage '../images/cycling.jpg', 500px;
+  }
+
   color: white;
   font-size: 2rem;
   background: color($green shade(10%));

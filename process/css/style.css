@@ -1,15 +1,12 @@
-/* Main */
 @import "variables";
 @import "mixins";
 @import "base";
 
-/* Modules */
 @import "modules/header";
 @import "modules/navigation";
 @import "modules/section";
 @import "modules/footer";
 
-/* Content */
 @import "content/products";
 @import "content/history";
 @import "content/guarantee";

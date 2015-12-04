@@ -9,27 +9,39 @@
     flex-flow: row wrap;
 
     .product-item {
-      height: 100%;
-      line-height: 150px;
+      position: relative;
       color: white;
-      font-weight: $font-weight-heavy;
-      font-size: 1em;
-      text-align: center;
-
       width: 50%;
-      transition: all .2s ease-out;
+
+      transition: all .4s ease-out;
       transform: scale(1);
 
       .product-name {
+        background: $red;
+        color: $yellow;
+        font-weight: $font-weight-heavy;
+        font-size: 1rem;
+        text-align: center;
         display: none;
-        &:hover {
-          display:block;
-        }
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
       }
 
       &:hover {
         z-index: 1;
-        transform: scale(1.5);
+/*! animation */
+        animation: pulse;
+
+        .product-image {
+          border-radius: 10px;
+        }
+        .product-name {
+
+
+          display: block;
+        }
       }
 
       @media $small {

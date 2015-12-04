@@ -4,6 +4,8 @@ var gulp = require('gulp'),
   postcss = require('gulp-postcss'),
   autoprefixer = require('autoprefixer'),
   precss = require('precss'),
+  cssnano = require('cssnano'),
+  animation = require('postcss-animation'),
   colorfunctions = require('postcss-color-function'),
 
   source = 'process/css/',
@@ -16,9 +18,11 @@ gulp.task('html', function() {
 gulp.task('css', function() {
   gulp.src(source + 'style.css')
   .pipe(postcss([
-    autoprefixer(),
     colorfunctions(),
-    precss()
+    precss(),
+    autoprefixer(),
+    animation()
+    //cssnano()
   ]))
   .on('error', gutil.log)
   .pipe(gulp.dest(dest + 'css'));
