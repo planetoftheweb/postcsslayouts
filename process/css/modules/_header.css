@@ -1,8 +1,10 @@
 .header {
-  @mixin backImage '../images/running.jpg', 500px;
+  @mixin backImage '../images/backgrounds/running.jpg', 500px;
+  background-attachment:fixed;
 
   @media $small {
-    @mixin backImage '../images/running.jpg', 800px;
+    @mixin backImage '../images/backgrounds/running.jpg', 800px;
+    background-attachment:fixed;
   }
   text-align: center;
     display: flex;

@@ -2,12 +2,15 @@
   padding-top: 0;
 
   .imageheader {
-    @mixin backImage '../images/cycling.jpg', 500px;
+    @mixin backImage '../images/backgrounds/cycling.jpg', 400px, rgba(0,0,0,0),  color($green shade(10%)), bottom, center;
+    background-attachment:fixed;
   }
 
   color: white;
   font-size: 2rem;
-  background: color($green shade(10%));
+  background: linear-gradient(to bottom,
+    color($green shade(25%)),
+    color($green shade(10%)));
 
   .headline {
     color: color($yellow tint(15%));

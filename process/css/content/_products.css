@@ -1,5 +1,11 @@
 #products {
   padding-bottom: 0;
+  padding-top: 0;
+
+  .imageheader {
+    @mixin backImage '../images/backgrounds/swimming.jpg', 300px, transparent, transparent;
+    background-attachment:fixed;
+  }
 
   .product-list {
     padding: 0;
@@ -12,9 +18,11 @@
       position: relative;
       color: white;
       width: 50%;
+      overflow: hidden;
 
-      transition: all .4s ease-out;
+      transition: all .4s ease-in-out;
       transform: scale(1);
+      opacity: .8;
 
       .product-name {
         background: $red;
@@ -30,17 +38,13 @@
       }
 
       &:hover {
+        opacity: 1;
         z-index: 1;
-/*! animation */
-        animation: pulse;
+        transform: scale(1.3);
 
-        .product-image {
-          border-radius: 10px;
-        }
         .product-name {
-
-
           display: block;
+          animation: slideInUp .5s;
         }
       }
 

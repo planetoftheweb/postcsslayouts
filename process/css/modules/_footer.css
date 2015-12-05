@@ -1,9 +1,13 @@
 .footer {
   background: color($yellow shade(80%));
   color: $color-background;
-  padding: 1rem 0 5rem 0;
+  padding: 0 0 5em 0;
   line-height: 100%;
   text-align: center;
+
+  .imageheader {
+    @mixin backImage '../images/backgrounds/discthrower.jpg', 800px, transparent, color($yellow shade(80%));
+  }
 
   .nav {
     margin-top: 0;
