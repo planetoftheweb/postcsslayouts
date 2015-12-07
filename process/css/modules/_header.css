@@ -1,32 +1,37 @@
 .header {
-  @mixin backImage '../images/backgrounds/running.jpg', 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+  @mixin backImage '../images/backgrounds/running.jpg', 500px;
   @media $small {
     @mixin backImage '../images/backgrounds/running.jpg', 800px;
   }
-  text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
-.tagline {
-  display: none;
-  @media $small {
-    display: block;
-    color: $color-background;
-    max-width: 40em;
-    line-height: 140%;
-    font-size: 2.5rem;
+  .container {
+    width: 95%;
+    max-width: 1200px;
+  }
 
-    h1 {
-      display: none;
-    }
+  .tagline {
+    display: none;
+    @media $small {
+      display: block;
+      color: $color-background;
+      max-width: 40em;
+      line-height: 140%;
+      font-size: 2.5rem;
 
-    em {
-      font-size: 140%;
-      color: $yellow;
-      font-style: normal;
+      h1 {
+        display: none;
+      }
+
+      em {
+        font-size: 140%;
+        color: $yellow;
+        font-style: normal;
+      }
     }
   }
 }

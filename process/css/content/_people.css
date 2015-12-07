@@ -1,12 +1,11 @@
 #people {
-  padding-top: 0;
   background: color($yellow tint(20%));
   background: linear-gradient(to bottom,
     color($yellow shade(5%)),
     color($yellow tint(20%)));
 
   .imageheader {
-    @mixin backImage '../images/backgrounds/soccer.jpg', 500px, transparent, transparent;
+    @mixin backImage '../images/backgrounds/soccer.jpg', auto, transparent, transparent;
   }
 
   .headline {

@@ -45,6 +45,20 @@ em {
 }
 
 .header {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background: -webkit-linear-gradient( top,
     rgba(0,0,0,.2),
     rgba(0,0,0,.5)),
@@ -60,20 +74,15 @@ em {
     max-height: 500px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    text-align: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+}
+
+.header .container {
+    width: 95%;
+    max-width: 1200px;
+}
+
+.header .tagline {
+    display: none;
 }
 
 @media screen and (min-width: 600px) {
@@ -96,22 +105,18 @@ em {
     }
 }
 
-.tagline {
-    display: none;
-}
-
 @media screen and (min-width: 600px) {
-    .tagline {
+    .header .tagline {
         display: block;
         color: white;
         max-width: 40em;
         line-height: 140%;
         font-size: 2.5rem;
     }
-    .tagline h1 {
+    .header .tagline h1 {
         display: none;
     }
-    .tagline em {
+    .header .tagline em {
         font-size: 140%;
         color: #F3D350;
         font-style: normal;
@@ -205,7 +210,7 @@ em {
 }
 .section {
     min-height: 40vh;
-    padding: 2% 0;
+    padding: 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -248,6 +253,10 @@ em {
     padding: 0 0 5em 0;
     line-height: 100%;
     text-align: center;
+}
+.footer .container {
+    width: 95%;
+    max-width: 1200px;
 }
 .footer .imageheader {
     background: -webkit-linear-gradient( top,
@@ -402,7 +411,6 @@ em {
     }
 }
 #guarantee {
-    padding-top: 0;
     color: white;
     font-size: 2rem;
     background: -webkit-linear-gradient(top,
@@ -425,7 +433,7 @@ em {
     background-position: bottom;
     background-size: cover;
     height: 100vh;
-    max-height: 400px;
+    max-height: auto;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
@@ -436,7 +444,6 @@ em {
     color: rgb(210, 214, 81);
 }
 #people {
-    padding-top: 0;
     background: rgb(245, 220, 115);
     background: -webkit-linear-gradient(top,
     rgb(231, 200, 76),
@@ -458,7 +465,7 @@ em {
     background-position: center center;
     background-size: cover;
     height: 100vh;
-    max-height: 500px;
+    max-height: auto;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }

@@ -5,6 +5,11 @@
   line-height: 100%;
   text-align: center;
 
+  .container {
+    width: 95%;
+    max-width: 1200px;
+  }
+
   .imageheader {
     @mixin backImage '../images/backgrounds/discthrower.jpg', 800px, transparent, color($yellow shade(80%));
   }
