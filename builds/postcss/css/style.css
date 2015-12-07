@@ -13,15 +13,15 @@ body {
     font-family: Raleway,Helvetica,Arial,sans-serif;
     line-height: 160%;
     font-weight: 300;
-    color: $color-main;
-    background-color: $color-backgrounds;
+    color: black;
+    background-color: white;
 }
 .container {
     width: 80%;
     margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: $font-highlight;
+    font-family: Raleway,Helvetica,Arial,sans-serif;
     color: #BFC406;
     margin: 0;
     padding: 0;
@@ -60,7 +60,6 @@ em {
     max-height: 500px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    background-attachment: fixed;
     text-align: center;
     display: -webkit-box;
     display: -webkit-flex;
@@ -94,7 +93,6 @@ em {
         max-height: 800px;
         -webkit-transition: all 0.5s ease;
         transition: all 0.5s ease;
-        background-attachment: fixed;
     }
 }
 
@@ -105,7 +103,7 @@ em {
 @media screen and (min-width: 600px) {
     .tagline {
         display: block;
-        color: #EEE8D6;
+        color: white;
         max-width: 40em;
         line-height: 140%;
         font-size: 2.5rem;
@@ -143,7 +141,7 @@ em {
 }
 .nav .nav-elements .navbar a {
     font-weight: 600;
-    color: #EEE8D6;
+    color: white;
     text-decoration: none;
     display: block;
     padding: .3em 15px;
@@ -246,7 +244,7 @@ em {
 }
 .footer {
     background: rgb(49, 42, 16);
-    color: #EEE8D6;
+    color: white;
     padding: 0 0 5em 0;
     line-height: 100%;
     text-align: center;
@@ -297,10 +295,9 @@ em {
     background-position: center center;
     background-size: cover;
     height: 100vh;
-    max-height: 300px;
+    max-height: auto;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    background-attachment: fixed;
 }
 
 #products .product-list {
@@ -398,7 +395,7 @@ em {
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: 30% auto;
-        height: 100vh;
+        min-height: 100vh;
     }
     #history .text-content {
         width: 70%;
@@ -431,11 +428,9 @@ em {
     max-height: 400px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    background-attachment: fixed;
 }
 #guarantee .headline {
     color: rgb(245, 218, 106);
-    color: $white;
 }
 #guarantee a {
     color: rgb(210, 214, 81);
@@ -466,7 +461,6 @@ em {
     max-height: 500px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    background-attachment: fixed;
 }
 #people .headline {
     color: white;

@@ -3,8 +3,7 @@
   padding-top: 0;
 
   .imageheader {
-    @mixin backImage '../images/backgrounds/swimming.jpg', 300px, transparent, transparent;
-    background-attachment:fixed;
+    @mixin backImage '../images/backgrounds/swimming.jpg', auto, transparent, transparent;
   }
 
   .product-list {

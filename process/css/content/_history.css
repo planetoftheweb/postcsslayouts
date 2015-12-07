@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 30% auto;
-    height: 100vh;
+    min-height: 100vh;
 
     .text-content {
       width: 70%;

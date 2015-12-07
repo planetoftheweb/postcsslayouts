@@ -7,7 +7,6 @@
 
   .imageheader {
     @mixin backImage '../images/backgrounds/soccer.jpg', 500px, transparent, transparent;
-    background-attachment:fixed;
   }
 
   .headline {

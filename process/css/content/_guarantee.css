@@ -3,7 +3,6 @@
 
   .imageheader {
     @mixin backImage '../images/backgrounds/cycling.jpg', 400px, rgba(0,0,0,0),  color($green shade(10%)), bottom, center;
-    background-attachment:fixed;
   }
 
   color: white;
@@ -14,7 +13,6 @@
 
   .headline {
     color: color($yellow tint(15%));
-    color: $white;
   }
 
   a {
