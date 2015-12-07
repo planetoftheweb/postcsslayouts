@@ -35,7 +35,7 @@ a {
     color: #D14348;
 }
 a:hover, a:focus {
-    border-bottom: 2px solid #D14348;
+    text-decoration: none;
 }
 em {
     font-weight: 700;

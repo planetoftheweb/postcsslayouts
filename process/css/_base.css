@@ -41,7 +41,7 @@ a {
 }
 
 a:hover, a:focus {
-  border-bottom: 2px solid $red;
+  text-decoration: none;
 }
 
 em {
