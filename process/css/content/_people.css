@@ -37,7 +37,7 @@
       transform: scale(.9);
       opacity: .8;
 
-      &:hover {
+      &:hover, &:focus {
         transform: scale(1.05);
         opacity: 1;
       }

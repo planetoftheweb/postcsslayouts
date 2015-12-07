@@ -40,7 +40,7 @@ a {
   color: $red;
 }
 
-a:hover {
+a:hover, a:focus {
   border-bottom: 2px solid $red;
 }
 

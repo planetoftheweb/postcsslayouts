@@ -37,7 +37,7 @@
         text-align: center;
       }
 
-      &:hover {
+      &:hover, &:focus {
         opacity: 1;
         z-index: 1;
         transform: scale(1.3);

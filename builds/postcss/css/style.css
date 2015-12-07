@@ -34,7 +34,7 @@ a {
     font-weight: 700;
     color: #D14348;
 }
-a:hover {
+a:hover, a:focus {
     border-bottom: 2px solid #D14348;
 }
 em {
@@ -48,11 +48,11 @@ em {
     background: -webkit-linear-gradient( top,
     rgba(0,0,0,.2),
     rgba(0,0,0,.5)),
-    url('../images/running.jpg');
+    url('../images/backgrounds/running.jpg');
     background: linear-gradient( to bottom,
     rgba(0,0,0,.2),
     rgba(0,0,0,.5)),
-    url('../images/running.jpg');
+    url('../images/backgrounds/running.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -60,6 +60,7 @@ em {
     max-height: 500px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    background-attachment: fixed;
     text-align: center;
     display: -webkit-box;
     display: -webkit-flex;
@@ -81,11 +82,11 @@ em {
         background: -webkit-linear-gradient( top,
     rgba(0,0,0,.2),
     rgba(0,0,0,.5)),
-    url('../images/running.jpg');
+    url('../images/backgrounds/running.jpg');
         background: linear-gradient( to bottom,
     rgba(0,0,0,.2),
     rgba(0,0,0,.5)),
-    url('../images/running.jpg');
+    url('../images/backgrounds/running.jpg');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -93,6 +94,7 @@ em {
         max-height: 800px;
         -webkit-transition: all 0.5s ease;
         transition: all 0.5s ease;
+        background-attachment: fixed;
     }
 }
 
@@ -157,11 +159,11 @@ em {
     -webkit-transition: width .3s ease-out, background-color .3s ease-out;
     transition: width .3s ease-out, background-color .3s ease-out;
 }
-.nav .nav-elements .navbar a:hover {
+.nav .nav-elements .navbar a:hover, .nav .nav-elements .navbar a:focus {
     color: #F3D350;
     border-bottom: none;
 }
-.nav .nav-elements .navbar a:hover:after {
+.nav .nav-elements .navbar a:hover:after, .nav .nav-elements .navbar a:focus:after {
     width: 100%;
     background: #F3D350;
 }
@@ -219,8 +221,8 @@ em {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    line-height: 3rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 160%;
 }
 .section .container {
     width: 80%;
@@ -234,15 +236,37 @@ em {
     line-height: 110%;
 }
 .section em, .section a {
-    font-size: 2.8rem;
+    font-size: 140%;
     vertical-align: -6%;
+}
+@media screen and (min-width: 600px) {
+    .section {
+        font-size: 2rem;
+    }
 }
 .footer {
     background: rgb(49, 42, 16);
     color: #EEE8D6;
-    padding: 1rem 0 5rem 0;
+    padding: 0 0 5em 0;
     line-height: 100%;
     text-align: center;
+}
+.footer .imageheader {
+    background: -webkit-linear-gradient( top,
+    transparent,
+    rgb(49, 42, 16)),
+    url('../images/backgrounds/discthrower.jpg');
+    background: linear-gradient( to bottom,
+    transparent,
+    rgb(49, 42, 16)),
+    url('../images/backgrounds/discthrower.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    max-height: 800px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 .footer .nav {
     margin-top: 0;
@@ -257,6 +281,26 @@ em {
 
 #products {
     padding-bottom: 0;
+    padding-top: 0;
+}
+
+#products .imageheader {
+    background: -webkit-linear-gradient( top,
+    transparent,
+    transparent),
+    url('../images/backgrounds/swimming.jpg');
+    background: linear-gradient( to bottom,
+    transparent,
+    transparent),
+    url('../images/backgrounds/swimming.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    max-height: 300px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-attachment: fixed;
 }
 
 #products .product-list {
@@ -276,11 +320,13 @@ em {
     position: relative;
     color: white;
     width: 50%;
-    -webkit-transition: all .4s ease-out;
-    transition: all .4s ease-out;
+    overflow: hidden;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
+    opacity: .8;
 }
 
 #products .product-list .product-item .product-name {
@@ -296,31 +342,28 @@ em {
     text-align: center;
 }
 
-#products .product-list .product-item:hover {
+#products .product-list .product-item:hover, #products .product-list .product-item:focus {
+    opacity: 1;
     z-index: 1;
-    /*! animation */
-    -webkit-animation: pulse;
-            animation: pulse;
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
 }
 
-@keyframes pulse {
+#products .product-list .product-item:hover .product-name, #products .product-list .product-item:focus .product-name {
+    display: block;
+    -webkit-animation: slideInUp .5s;
+            animation: slideInUp .5s;
+}
+
+@keyframes slideInUp {
     from {
-        transform: scale3d(1, 1, 1);
-    }
-    50% {
-        transform: scale3d(1.05, 1.05, 1.05);
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
     }
     to {
-        transform: scale3d(1, 1, 1);
+        transform: translate3d(0, 0, 0);
     }
-}
-
-#products .product-list .product-item:hover .product-image {
-    border-radius: 10px;
-}
-
-#products .product-list .product-item:hover .product-name {
-    display: block;
 }
 
 @media screen and (min-width: 600px) {
@@ -341,7 +384,7 @@ em {
     }
 }
 #history {
-    background: #F3D350;
+    background-color: #F3D350;
 }
 #history .headline {
     color: #D14348;
@@ -349,28 +392,46 @@ em {
 #history em {
     color: rgb(230, 159, 42);
 }
+@media screen and (min-width: 1200px) {
+    #history {
+        background-image: url(../images/employees/HenryTwill_outline.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 30% auto;
+        height: 100vh;
+    }
+    #history .text-content {
+        width: 70%;
+    }
+}
 #guarantee {
     padding-top: 0;
     color: white;
     font-size: 2rem;
-    background: rgb(172, 176, 5);
+    background: -webkit-linear-gradient(top,
+    rgb(143, 147, 5),
+    rgb(172, 176, 5));
+    background: linear-gradient(to bottom,
+    rgb(143, 147, 5),
+    rgb(172, 176, 5));
 }
 #guarantee .imageheader {
     background: -webkit-linear-gradient( top,
-    rgba(0,0,0,.2),
-    rgba(0,0,0,.5)),
-    url('../images/cycling.jpg');
+    rgba(0,0,0,0),
+    rgb(172, 176, 5)),
+    url('../images/backgrounds/cycling.jpg');
     background: linear-gradient( to bottom,
-    rgba(0,0,0,.2),
-    rgba(0,0,0,.5)),
-    url('../images/cycling.jpg');
+    rgba(0,0,0,0),
+    rgb(172, 176, 5)),
+    url('../images/backgrounds/cycling.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: bottom;
     background-size: cover;
     height: 100vh;
-    max-height: 500px;
+    max-height: 400px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    background-attachment: fixed;
 }
 #guarantee .headline {
     color: rgb(245, 218, 106);
@@ -380,7 +441,32 @@ em {
     color: rgb(210, 214, 81);
 }
 #people {
+    padding-top: 0;
     background: rgb(245, 220, 115);
+    background: -webkit-linear-gradient(top,
+    rgb(231, 200, 76),
+    rgb(245, 220, 115));
+    background: linear-gradient(to bottom,
+    rgb(231, 200, 76),
+    rgb(245, 220, 115));
+}
+#people .imageheader {
+    background: -webkit-linear-gradient( top,
+    transparent,
+    transparent),
+    url('../images/backgrounds/soccer.jpg');
+    background: linear-gradient( to bottom,
+    transparent,
+    transparent),
+    url('../images/backgrounds/soccer.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    max-height: 500px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-attachment: fixed;
 }
 #people .headline {
     color: white;
@@ -402,7 +488,7 @@ em {
             transform: scale(.9);
     opacity: .8;
 }
-#people .people-cards .person-card:hover {
+#people .people-cards .person-card:hover, #people .people-cards .person-card:focus {
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
             transform: scale(1.05);

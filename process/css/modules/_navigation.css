@@ -50,12 +50,12 @@
       transition: width .3s ease-out, background-color .3s ease-out;
       }
 
-      a:hover {
+      a:hover, a:focus {
         color: $yellow;
         border-bottom: none;
       }
 
-      a:hover:after {
+      a:hover:after, a:focus:after {
       width: 100%;
       background: $yellow;
       }
