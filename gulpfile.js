@@ -6,7 +6,6 @@ var gulp = require('gulp'),
   precss = require('precss'),
   cssnano = require('cssnano'),
   animation = require('postcss-animation'),
-  colorfunctions = require('postcss-color-function'),
 
   source = 'process/css/',
   dest = 'builds/postcss/';
