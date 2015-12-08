@@ -20,8 +20,8 @@ gulp.task('css', function() {
   .pipe(postcss([
     colorfunctions(),
     precss(),
-    autoprefixer(),
     animation(),
+    autoprefixer(),
     cssnano()
   ]))
   .on('error', gutil.log)
