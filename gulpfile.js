@@ -18,9 +18,9 @@ gulp.task('css', function() {
   gulp.src(source + 'style.css')
   .pipe(postcss([
     precss(),
+    animation(),
     autoprefixer(),
-    animation()
-    //cssnano()
+    cssnano()
   ]))
   .on('error', gutil.log)
   .pipe(gulp.dest(dest + 'css'));
