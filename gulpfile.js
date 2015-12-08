@@ -21,8 +21,8 @@ gulp.task('css', function() {
     colorfunctions(),
     precss(),
     autoprefixer(),
-    animation()
-    //cssnano()
+    animation(),
+    cssnano()
   ]))
   .on('error', gutil.log)
   .pipe(gulp.dest(dest + 'css'));
