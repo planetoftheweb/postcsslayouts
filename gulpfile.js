@@ -17,7 +17,6 @@ gulp.task('html', function() {
 gulp.task('css', function() {
   gulp.src(source + 'style.css')
   .pipe(postcss([
-    colorfunctions(),
     precss(),
     animation(),
     autoprefixer(),
