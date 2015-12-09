@@ -1,10 +1,53 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
   color: $color-main;
   background-color: $color-background;
+  font-family: $font-main;
+  font-size: 1.8rem;
+  line-height: 160%;
+  font-weight: $font-weight-normal;
+}
+
+.container {
+  width: $container-default-width;
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+  font-family: $font-main;
+  color: $green;
 }
 
 img {
+  display: block;
   max-width: 100%;
+}
+
+a {
+  font-weight: $font-weight-heavy;
+  color: $red;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+em {
+  font-weight: $font-weight-heavy;
+  font-size: 140%;
+  color: $yellow;
+  font-style: normal;
 }
