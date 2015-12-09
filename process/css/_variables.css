@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,600,700);
+
+$font-main: Raleway, Helvetica, Arial, sans-serif;
+$font-weight-normal: 300;
+$font-weight-bold: 600;
+$font-weight-heavy: 700;
+
+$offwhite: #EEE8D6;
+$darkblue: #022933;
+$yellow:   #F3D350;
+$blue:     #0076A3;
+$green:    #BFC406;
+$orange:   #FFB12F;
+$red:      #D14348;
+$purple:    #6D73C2;
+
+$color-main:       black;
+$color-background: white;
+
+$small: screen and (min-width: 600px);
+$medium: screen and (min-width: 900px);
+$large: screen and (min-width: 1200px);
+
+$container-default-width: 80%;
+$container-max-width: 1200px;
