@@ -4,6 +4,8 @@
   padding: 0 0 5em 0;
   line-height: 100%;
   text-align: center;
+  display: flex;
+  align-items: flex-end;
 
   @mixin backImage '../images/backgrounds/discthrower.jpg', 800px, transparent, color($yellow shade(80%));
 
