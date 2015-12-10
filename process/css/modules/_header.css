@@ -1,6 +1,35 @@
 .header {
-  @mixin backImage '../images/backgrounds/running.jpg';
+  @mixin backImage '../images/backgrounds/running.jpg', 500px;
+
+  @media $small {
+    @mixin backImage '../images/backgrounds/running.jpg', 800px;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
+
+  .tagline {
+    display: none;
+
+    @media $small {
+      display: block;
+      color: $color-background;
+      max-width: 40em;
+      line-height: 140%;
+      font-size: 2.5rem;
+
+      h1 {
+        display: none;
+      }
+
+      em {
+        font-size: 140%;
+        color: $yellow;
+        font-style: normal;
+      }
+    }
+  }
+
 }
