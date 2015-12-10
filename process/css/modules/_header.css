@@ -1,0 +1,6 @@
+.header {
+  @mixin backImage '../images/backgrounds/running.jpg';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
