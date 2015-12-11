@@ -1,0 +1,45 @@
+$item-width: 100%;
+
+#products {
+  .imageheader {
+     @mixin backImage '../images/backgrounds/swimming.jpg', auto, transparent, transparent
+  }
+
+  .product-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+
+    .product-item {
+      position: relative;
+      color: $color-background;
+      overflow: hidden;
+
+      width: calc($item-width/2);
+      @media $small { width: calc($item-width/3); }
+      @media $medium { width: calc($item-width/4); }
+      @media $large { width: calc($item-width/6); }
+
+      .product-name {
+        background: $red;
+        color: $yellow;
+        font-weight: $font-weight-heavy;
+        font-size: 80%;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: none;
+      } /*.product-name*/
+
+      &:hover, &:focus {
+        .product-name {
+          display: block;
+        }
+      }
+
+    } /*.product-item*/
+  }/*.product-list*/
+} /* products*/
