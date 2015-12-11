@@ -1,0 +1,24 @@
+#history {
+  background-color: $yellow;
+
+  @media $large {
+    background-image: url('../images/employees/HenryTwill_outline.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 30% auto;
+    min-height: 100vh;
+
+    .text-content {
+      width: 70%;
+    }
+  }
+
+  .headline {
+    color: $red;
+  }
+
+  em {
+    color: color($orange shade(10%));
+  }
+
+}

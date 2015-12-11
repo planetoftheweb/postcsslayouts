@@ -6,3 +6,5 @@
 @import "modules/navigation";
 @import "modules/footer";
 @import "modules/section";
+
+@import "sections/history";
