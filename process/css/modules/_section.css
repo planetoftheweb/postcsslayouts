@@ -1,0 +1,26 @@
+.section {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 160%;
+
+  @media $small {
+    font-size: 2rem;
+  }
+
+  .headline {
+    text-transform: uppercase;
+    font-weight: $font-weight-normal;
+    font-size: 4rem;
+    margin-top: 3rem;
+    line-height: 110%;
+  }
+
+  em, a {
+    font-size: 140%;
+    vertical-align: -6%;
+  }
+
+
+}
