@@ -1,0 +1,68 @@
+$color-background-people: color($yellow shade(5%));
+$item-width: 100%;
+
+#people {
+  background-color: $color-background-people;
+
+  .imageheader {
+    @mixin backImage '../images/backgrounds/soccer.jpg', 40vh, transparent, $color-background-people, top;
+  }
+
+  .headline {
+    color: $color-background;
+    padding-bottom: 2rem;
+  }
+
+  .people-cards {
+    @media $small {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .person-card {
+        background: color($color-background alpha(20%));
+        box-shadow: 5px 5px 3px color($yellow alpha(50%));
+        border-radius: 20px;
+        margin-bottom: 3rem;
+
+        @media $small {
+          width: calc($item-width/2 - 1.5rem);
+        }
+
+        @media $large {
+          width: calc($item-width/3 - 1.5rem);
+        }
+
+        .card-info {
+          background: color($orange alpha(90%));
+          padding: 3% 7%;
+
+          .card-name {
+            font-size: 2rem;
+            line-height: 110%;
+            color: $red;
+          }
+
+          .card-title {
+            color: color( $color-background alpha(60%));
+            font-size: 1.4rem;
+            line-height: 100%;
+          }
+        } /*.card-info*/
+
+        .card-text {
+          font-size: 1.6rem;
+          font-weight: $font-weight-normal;
+          line-height: 130%;
+          margin: 0;
+          padding: 7%;
+
+          em {
+            color: color($orange shade(5%));
+            font-size: 2.2rem;
+          }
+        } /*.card-text*/
+    } /*.person-card*/
+  } /*.people-cards*/
+} /*.people*/
