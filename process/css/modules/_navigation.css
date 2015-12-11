@@ -18,8 +18,9 @@
     .navbar {
       margin: 0;
       padding: 0;
-      line-height: 150%;
+      line-height: 120%;
       list-style-type: none;
+      margin-top: 2rem;
       width: 100%;
       @media $small {
         display: flex;
@@ -27,17 +28,32 @@
         align-content: flex-start;
         flex-wrap: wrap;
       }
-    }
 
-    a {
-      font-weight: $font-weight-bold;
-      color: $color-background;
-      text-decoration: none;
-      padding: 0 1rem;
-    }
+      a {
+        font-weight: $font-weight-bold;
+        color: $color-background;
+        text-decoration: none;
+        padding: 0 1rem;
+        transition: 1s ease-out;
+      }
 
-    a:hover {
-      color: $yellow;
-    }
-  }
-}
+      a:after {
+        content: '';
+        display: block;
+        height: 5px;
+        width: 0;
+        margin: 0 .5rem;
+        transition: width .3s ease-out, background-color .3s ease-out;
+      }
+
+      a:hover {
+        color: $yellow;
+      }
+
+      a:hover:after {
+        width: 100%;
+        background: $yellow;
+      }
+    } /* navbar */
+  } /* navelements */
+}  /* nav */
