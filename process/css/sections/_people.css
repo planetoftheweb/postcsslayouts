@@ -25,6 +25,14 @@ $item-width: 100%;
         box-shadow: 5px 5px 3px color($yellow alpha(50%));
         border-radius: 20px;
         margin-bottom: 3rem;
+        transition: all .2s ease-in;
+        transform: scale(.9);
+        opacity: .8;
+
+        &:hover {
+          transform: scale(1.05);
+          opacity: 1;
+        }
 
         @media $small {
           width: calc($item-width/2 - 1.5rem);
