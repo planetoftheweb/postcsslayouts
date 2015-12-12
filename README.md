@@ -1,4 +1,4 @@
-# PostCSS: First Look
+# Responsive Single Page Design with PostCSS.
 
 This is the repository for my upcoming course: Responsive Single Page Design with PostCSS. The full course will be available at [lynda.com](http://lynda.com) soon.
 
